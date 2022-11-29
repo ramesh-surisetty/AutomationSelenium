@@ -19,6 +19,7 @@ public class omayoHomeTests extends BaseTests{
 		omayoHomePages omayoPage= new omayoHomePages();
 		omayoPage.provideUsernameAndPassword();
 		log.info("Username and password provided");
+		Assert.assertTrue(false);
 		
 	}
 	
@@ -28,6 +29,8 @@ public class omayoHomeTests extends BaseTests{
 		omayoHomePages omayoPage= new omayoHomePages();
 		omayoPage.scrollToUserName();
 		log.info("SCROLELD TILL Username ");
+		Assert.assertTrue(false);
+
 		
 	}
 	@Test

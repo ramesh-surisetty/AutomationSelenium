@@ -8,6 +8,8 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.testers.pages.basePages;
+
 public final class ListenerClass implements ITestListener ,ISuiteListener{
 
 	Logger log = LogManager.getLogger("FrameworkLogs");
@@ -36,6 +38,8 @@ public final class ListenerClass implements ITestListener ,ISuiteListener{
 	public void onTestFailure(ITestResult result) {
 		
 		log.info("Test Failed : "+ result.getMethod().getMethodName());
+		
+		basePages.takeScreenshot();
 		
 	}
 
