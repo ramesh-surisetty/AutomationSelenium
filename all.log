@@ -1,0 +1,13 @@
+2022-11-29 16:31:54.383 [main] INFO  Driver - User launched : http://omayo.blogspot.com/
+2022-11-29 16:31:54.394 [main] INFO  FrameworkLogs - Test Started : JSText
+2022-11-29 16:31:54.472 [main] INFO  FrameworkLogs - Test Passed : JSText
+2022-11-29 16:31:58.651 [main] INFO  Driver - User launched : http://omayo.blogspot.com/
+2022-11-29 16:31:58.653 [main] INFO  FrameworkLogs - Test Started : omayoTest1
+2022-11-29 16:31:58.878 [main] INFO  LoginPageTests - Username and password provided
+2022-11-29 16:31:58.880 [main] INFO  FrameworkLogs - Test Passed : omayoTest1
+2022-11-29 16:32:04.203 [main] INFO  Driver - User launched : http://omayo.blogspot.com/
+2022-11-29 16:32:04.205 [main] INFO  FrameworkLogs - Test Started : omayoTest2
+2022-11-29 16:32:04.237 [main] INFO  LoginPageTests - Scrolled till element visible at bottom
+2022-11-29 16:32:07.253 [main] INFO  LoginPageTests - Scrolled till element visible at top
+2022-11-29 16:32:10.266 [main] INFO  LoginPageTests - SCROLELD TILL Username 
+2022-11-29 16:32:10.269 [main] INFO  FrameworkLogs - Test Passed : omayoTest2

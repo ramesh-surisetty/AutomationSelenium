@@ -2,48 +2,48 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-25T16:48:40 IST" name="Default suite" finished-at="2022-11-25T16:48:59 IST" duration-ms="19210">
+  <suite started-at="2022-11-29T16:31:48 IST" name="Suite" finished-at="2022-11-29T16:32:10 IST" duration-ms="21462">
     <groups>
     </groups>
-    <test started-at="2022-11-25T16:48:40 IST" name="Default test" finished-at="2022-11-25T16:48:59 IST" duration-ms="19210">
+    <test started-at="2022-11-29T16:31:48 IST" name="Test" finished-at="2022-11-29T16:32:10 IST" duration-ms="21462">
       <class name="com.testers.tests.omayoHomeTests">
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:40 IST" name="setUP" finished-at="2022-11-25T16:48:45 IST" duration-ms="5459" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:48 IST" name="setUP" finished-at="2022-11-29T16:31:54 IST" duration-ms="5552" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="JSText()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:45 IST" name="JSText" finished-at="2022-11-25T16:48:45 IST" duration-ms="76" status="PASS">
+        <test-method signature="JSText()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:54 IST" name="JSText" finished-at="2022-11-29T16:31:54 IST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- JSText -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:45 IST" name="tearDown" finished-at="2022-11-25T16:48:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:54 IST" name="tearDown" finished-at="2022-11-29T16:31:54 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:45 IST" name="setUP" finished-at="2022-11-25T16:48:49 IST" duration-ms="3889" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:54 IST" name="setUP" finished-at="2022-11-29T16:31:58 IST" duration-ms="4177" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="omayoTest1()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:49 IST" name="omayoTest1" finished-at="2022-11-25T16:48:49 IST" duration-ms="219" status="PASS">
+        <test-method signature="omayoTest1()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:58 IST" name="omayoTest1" finished-at="2022-11-29T16:31:58 IST" duration-ms="226" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- omayoTest1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:49 IST" name="tearDown" finished-at="2022-11-25T16:48:49 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:58 IST" name="tearDown" finished-at="2022-11-29T16:31:58 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:49 IST" name="setUP" finished-at="2022-11-25T16:48:53 IST" duration-ms="3481" status="PASS">
+        <test-method is-config="true" signature="setUP()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:31:58 IST" name="setUP" finished-at="2022-11-29T16:32:04 IST" duration-ms="5323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUP -->
-        <test-method signature="omayoTest2()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:53 IST" name="omayoTest2" finished-at="2022-11-25T16:48:59 IST" duration-ms="6049" status="PASS">
+        <test-method signature="omayoTest2()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:32:04 IST" name="omayoTest2" finished-at="2022-11-29T16:32:10 IST" duration-ms="6063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- omayoTest2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56276db8]" started-at="2022-11-25T16:48:59 IST" name="tearDown" finished-at="2022-11-25T16:48:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.testers.tests.omayoHomeTests@56f6d40b]" started-at="2022-11-29T16:32:10 IST" name="tearDown" finished-at="2022-11-29T16:32:10 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.testers.tests.omayoHomeTests -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
