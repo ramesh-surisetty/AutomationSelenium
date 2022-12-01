@@ -1,6 +1,7 @@
 package com.testers.tests;
 
 
+import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 
@@ -45,11 +46,11 @@ public class BaseTests {
 	@BeforeSuite
 	public void initReports() {
 		
-		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports/index.html");
+		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports/RaviReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(spark);
 		
-		spark.config().setTheme(Theme.STANDARD);
+		spark.config().setTheme(Theme.DARK);
 		spark.config().setDocumentTitle("Automation Report");
 		spark.config().setReportName("Report Rav");
 	}
@@ -57,6 +58,11 @@ public class BaseTests {
 	@AfterSuite
 	public void flushReports() {
 		extent.flush();
+		try {
+			Desktop.getDesktop().browse(new File("ExtentReports/RaviReport.html").toURI());
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 	
 	public static void createTestReport(String testcasename) {
