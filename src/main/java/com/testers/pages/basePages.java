@@ -2,6 +2,8 @@ package com.testers.pages;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
@@ -68,12 +70,14 @@ public class basePages {
 	}
 	
 	public static void takeScreenshot(String methodname) {
+	
+		String timestamp =new SimpleDateFormat("yyyy_MM_dd_HH_mm").format(Calendar.getInstance().getTime());
 		
 		TakesScreenshot tk = (TakesScreenshot)Driver.driver;
 		
 		File src =tk.getScreenshotAs(OutputType.FILE);
 		
-		File dest = new File(System.getProperty("user.dir")+"/Screenshots/screenshot_"+methodname+".png");
+		File dest = new File(System.getProperty("user.dir")+"/Screenshots/screenshot_"+methodname+"_"+timestamp+".png");
 		
 		try {
 			FileUtils.copyFile(src, dest);
