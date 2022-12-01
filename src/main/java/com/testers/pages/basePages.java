@@ -67,18 +67,17 @@ public class basePages {
 		js.executeScript( "arguments[0].value=arguments[1]", ele, text);
 	}
 	
-	public static void takeScreenshot() {
+	public static void takeScreenshot(String methodname) {
 		
 		TakesScreenshot tk = (TakesScreenshot)Driver.driver;
 		
 		File src =tk.getScreenshotAs(OutputType.FILE);
 		
-		File dest = new File(System.getProperty("user.dir")+"/Screenshots/img1.png");
+		File dest = new File(System.getProperty("user.dir")+"/Screenshots/screenshot_"+methodname+".png");
 		
 		try {
 			FileUtils.copyFile(src, dest);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

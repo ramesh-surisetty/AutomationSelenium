@@ -39,7 +39,7 @@ public final class ListenerClass implements ITestListener ,ISuiteListener{
 		
 		log.info("Test Failed : "+ result.getMethod().getMethodName());
 		
-		basePages.takeScreenshot();
+		basePages.takeScreenshot(result.getMethod().getMethodName());
 		
 	}
 

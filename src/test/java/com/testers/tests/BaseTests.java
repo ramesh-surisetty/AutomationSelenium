@@ -22,7 +22,7 @@ public class BaseTests {
 	
 	@AfterMethod
 	public void tearDown() {
-		//Driver.quitDriver();
+		Driver.quitDriver();
 	}
 	
 	public void staticwait(long time) {

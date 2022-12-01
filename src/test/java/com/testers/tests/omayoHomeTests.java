@@ -5,8 +5,6 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import com.testers.drivers.Driver;
-import com.testers.pages.AdactinLoginPage;
 import com.testers.pages.omayoHomePages;
 
 public class omayoHomeTests extends BaseTests{
