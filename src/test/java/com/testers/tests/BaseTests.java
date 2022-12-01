@@ -8,12 +8,20 @@ import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
 
-
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.testers.drivers.Driver;
 
 public class BaseTests {
+	
+	public static ExtentReports extent;
+	public static ExtentTest test;
 	
 	@BeforeMethod
 	public void setUP() {
@@ -34,6 +42,25 @@ public class BaseTests {
 		}
 	}
 	
+	@BeforeSuite
+	public void initReports() {
+		
+		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports/index.html");
+		extent = new ExtentReports();
+		extent.attachReporter(spark);
+		
+		spark.config().setTheme(Theme.STANDARD);
+		spark.config().setDocumentTitle("Automation Report");
+		spark.config().setReportName("Report Rav");
+	}
 	
+	@AfterSuite
+	public void flushReports() {
+		extent.flush();
+	}
+	
+	public static void createTestReport(String testcasename) {
+		test = extent.createTest(testcasename);
+	}
 	
 }
