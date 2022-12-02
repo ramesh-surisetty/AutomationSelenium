@@ -18,11 +18,12 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.testers.drivers.Driver;
+import com.testers.reports.ExtentReport;
 
 public class BaseTests {
 	
-	public static ExtentReports extent;
-	public static ExtentTest test;
+	//public static ExtentReports extent;
+	//public static ExtentTest test;
 	
 	@BeforeMethod
 	public void setUP() {
@@ -46,27 +47,20 @@ public class BaseTests {
 	@BeforeSuite
 	public void initReports() {
 		
-		ExtentSparkReporter spark = new ExtentSparkReporter("ExtentReports/RaviReport.html");
-		extent = new ExtentReports();
-		extent.attachReporter(spark);
+		ExtentReport.initReports();
 		
-		spark.config().setTheme(Theme.DARK);
-		spark.config().setDocumentTitle("Automation Report");
-		spark.config().setReportName("Report Rav");
 	}
 	
 	@AfterSuite
 	public void flushReports() {
-		extent.flush();
-		try {
-			Desktop.getDesktop().browse(new File("ExtentReports/RaviReport.html").toURI());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+		
+		ExtentReport.flushReports();
 	}
 	
+	/*
 	public static void createTestReport(String testcasename) {
 		test = extent.createTest(testcasename);
 	}
+	*/
 	
 }

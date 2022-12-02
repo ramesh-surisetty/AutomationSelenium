@@ -9,6 +9,7 @@ import org.testng.ITestListener;
 import org.testng.ITestResult;
 
 import com.testers.pages.basePages;
+import com.testers.reports.ExtentReport;
 
 public final class ListenerClass implements ITestListener ,ISuiteListener{
 
@@ -19,7 +20,6 @@ public final class ListenerClass implements ITestListener ,ISuiteListener{
 		
 	}
 	
-
 	public void onFinish(ISuite suite) {
 		
 	}
@@ -27,11 +27,16 @@ public final class ListenerClass implements ITestListener ,ISuiteListener{
 	public void onTestStart(ITestResult result) {
 
 		log.info("Test Started : "+ result.getMethod().getMethodName());
+		
+		ExtentReport.createTestReport(result.getMethod().getMethodName());
+		
 	}
 
 	public void onTestSuccess(ITestResult result) {
 		
 		log.info("Test Passed : "+ result.getMethod().getMethodName());
+		
+		ExtentReport.createtestpass(result.getMethod().getMethodName());
 
 	}
 
@@ -40,6 +45,8 @@ public final class ListenerClass implements ITestListener ,ISuiteListener{
 		log.info("Test Failed : "+ result.getMethod().getMethodName());
 		
 		basePages.takeScreenshot(result.getMethod().getMethodName());
+		
+		ExtentReport.createtestfail(result.getMethod().getMethodName());
 		
 	}
 

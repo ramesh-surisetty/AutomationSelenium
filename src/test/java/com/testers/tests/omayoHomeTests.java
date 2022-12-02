@@ -14,7 +14,7 @@ public class omayoHomeTests extends BaseTests{
 	@Test
 	public void omayoTest1() {
 		
-		createTestReport("omayoTest1");
+		//createTestReport("omayoTest1");
 		omayoHomePages omayoPage= new omayoHomePages();
 		omayoPage.provideUsernameAndPassword();
 		log.info("Username and password provided");
@@ -25,7 +25,7 @@ public class omayoHomeTests extends BaseTests{
 	@Test
 	public void omayoTest2() {
 		
-		createTestReport("omayoTest2");
+		//createTestReport("omayoTest2");
 		omayoHomePages omayoPage= new omayoHomePages();
 		omayoPage.scrollToUserName();
 		log.info("SCROLELD TILL Username ");
@@ -36,7 +36,7 @@ public class omayoHomeTests extends BaseTests{
 	@Test
 	public void JSText() {
 		
-		createTestReport("JSText");
+		//createTestReport("JSText");
 		omayoHomePages omayoPage= new omayoHomePages();
 		omayoPage.enterDataUsingJavaScriptExecutor();
 	}

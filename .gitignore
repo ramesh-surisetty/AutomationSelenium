@@ -1,0 +1,9 @@
+target/*
+.settings
+.classpath
+.project
+ExtentReports/*
+test-output/*
+index1.html
+Screenshots/*
+

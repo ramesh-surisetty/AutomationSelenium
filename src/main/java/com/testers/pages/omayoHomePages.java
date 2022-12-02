@@ -5,6 +5,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import com.testers.drivers.Driver;
+import com.testers.reports.ExtentReport;
 
 public class omayoHomePages extends basePages{
 	
@@ -13,15 +14,22 @@ public class omayoHomePages extends basePages{
 	
 	public void provideUsernameAndPassword() {
 		
+		ExtentReport.createstepinfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 		click(omayousername);
 		enterField(omayousername,"omayologin");
 		
+		
 		click(omayopassword);
 		enterField(omayopassword,"omayopwd");
+
 		
 	}
 	
 	public void scrollToUserName() {
+		
+		ExtentReport.createstepinfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 		
 		JavascriptExecutor js =(JavascriptExecutor)Driver.driver;
 		
@@ -36,10 +44,13 @@ public class omayoHomePages extends basePages{
 
 		staticwait(3000);
 		pageScrollDown();
+
 	}
 	
 	public void enterDataUsingJavaScriptExecutor() {
 		
+		ExtentReport.createstepinfo(Thread.currentThread().getStackTrace()[1].getMethodName());
+
 		WebElement omayouname =Driver.driver.findElement(omayousername);
 		WebElement omayopwd =Driver.driver.findElement(omayopassword);
 		
